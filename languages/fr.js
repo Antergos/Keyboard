@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // fr = ISO 639-1 code for French
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.fr = {
 	language: 'Fran\u00e7ais (French)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.fr = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Utiliser la molette de la souris pour voir les autres lettres',
 };
+
+module.exports.jQuery = jQuery;

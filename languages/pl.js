@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // pl = ISO 639-1 code for Polish
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.pl = {
 	language: 'Polski (Polish)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.pl = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Użyj rolki aby zobaczyć pozozstałe klawisze',
 };
+
+module.exports.jQuery = jQuery;

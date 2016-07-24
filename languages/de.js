@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // de = ISO 639-1 code for German
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.de = {
 	language: 'Deutsch (German)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.de = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Mausrad benutzen, um weitere Tasten zu sehen',
 };
+
+module.exports.jQuery = jQuery;

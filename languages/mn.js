@@ -1,6 +1,9 @@
 // Keyboard Language
 // mn = ISO 639-1 code for Mongolian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.mn = {
 	language: '\u041c\u043e\u043d\u0433\u043e\u043b (Mongolian)',
 	display : {
@@ -27,3 +30,5 @@ jQuery.keyboard.language.mn = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys'
 };
+
+module.exports.jQuery = jQuery;

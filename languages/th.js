@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // th = ISO 639-1 code for Thai
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.th = {
 	language: '\u0e44\u0e17\u0e22 (Thai)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.th = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'You can use the mouse wheel to see additional keys',
 };
+
+module.exports.jQuery = jQuery;

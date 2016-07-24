@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // pt = ISO 639-1 code for Portuguese
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.pt = {
 	language: 'Portugu\u00eas (Portuguese)',
 	display : {
@@ -37,3 +40,5 @@ jQuery.keyboard.language.pt = {
 	}
 
 };
+
+module.exports.jQuery = jQuery;

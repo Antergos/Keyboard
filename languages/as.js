@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // as = ISO 639-1 code for Assamese
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.as = {
 	language : '\u0985\u09b8\u09ae\u09c0\u09df\u09be (Assamese)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.as = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // bg = ISO 639-1 code for Bulgarian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.bg = {
 	language: '\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (Bulgarian)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.bg = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

@@ -1,6 +1,9 @@
 // Keyboard Language
 // zh = ISO 639-1 code for Chinese
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.zh = {
 	language: '\u4e2d\u6587\u4ed3\u9889\u8f93\u5165\u6cd5 (Chinese)',
 	display : {
@@ -27,3 +30,5 @@ jQuery.keyboard.language.zh = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

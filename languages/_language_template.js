@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // "all" is used here for example purposes, by convention it should be the ISO 639-1 code for the specified language
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.all = {
 	language: 'All (English translation)', // e.g. 'Русский (Russian)'
 	display : {
@@ -56,3 +59,5 @@ jQuery.keyboard.language.all = {
 	rtl : false
 	*/
 };
+
+module.exports.jQuery = jQuery;

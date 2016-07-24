@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // ru = ISO 639-1 code for Russian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.ru = {
 	language: '\u0420\u0443\u0441\u0441\u043a\u0438\u0439 (Russian)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.ru = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

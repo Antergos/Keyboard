@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // be = ISO 639-1 code for Belarusian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.be = {
 	language: '\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f (Belarusian)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.be = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

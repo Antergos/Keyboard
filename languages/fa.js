@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // fa = ISO 639-1 code for Farsi
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.fa = {
 	language: '\u0641\u0627\u0631\u0633\u06cc (Farsi)',
 	display: {
@@ -52,3 +55,5 @@ jQuery.keyboard.language.fa = {
 	}
 	*/
 };
+
+module.exports.jQuery = jQuery;

@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // ja = ISO 639-1 code for Japanese
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.ja = {
 	language: '\u65e5\u672c\u8a9e (Japanese)',
 	display : {
@@ -36,3 +39,5 @@ jQuery.keyboard.language.ja = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

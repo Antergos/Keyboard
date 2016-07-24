@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // kn = ISO 639-1 code for Kannada
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.kn = {
 	Language : '\u0c95\u0ca8\u0ccd\u0ca8\u0ca1 (Kannada)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.kn = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

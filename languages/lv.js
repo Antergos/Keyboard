@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // lv = ISO 639-1 code for Latvian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.lv = {
 	language: 'Latvie\u0161u (Latvian)',
 	display : {
@@ -39,3 +42,5 @@ jQuery.keyboard.language.lv = {
 	},
 	comboRegex : /([`\'~\^\"ao\u00a8\u00b0])([a-z])/mig
 };
+
+module.exports.jQuery = jQuery;

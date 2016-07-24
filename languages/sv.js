@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // sv = ISO 639-1 code for Swedish
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.sv = {
 	language: 'Svenska (Swedish)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.sv = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

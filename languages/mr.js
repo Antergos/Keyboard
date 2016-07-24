@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // mr = ISO 639-1 code for Marathi
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.mr = {
 	language : '\u092e\u0930\u093e\u0920\u0940 (Marathi)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.mr = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

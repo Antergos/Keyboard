@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // hi = ISO 639-1 code for Hindi
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.hi = {
 	language: '\u0939\u093f\u0902\u0926\u0940 (Hindi)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.hi = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

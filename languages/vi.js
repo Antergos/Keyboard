@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // vi = ISO 639-1 code for Vietnamese
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.vi = {
 	language: 'Ti\u1ebfng Vi\u1ec7t (Vietnamese)',
 	display : {
@@ -64,3 +67,5 @@ jQuery.keyboard.language.vi = {
 
 	}
 };
+
+module.exports.jQuery = jQuery;

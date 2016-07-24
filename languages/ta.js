@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // ta = ISO 639-1 code for Tamil
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.ta = {
 	language: '\u0ba4\u0bae\u0bbf\u0bb4\u0bcd (Tamil)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.ta = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'You can use the mouse wheel to see additional keys',
 };
+
+module.exports.jQuery = jQuery;

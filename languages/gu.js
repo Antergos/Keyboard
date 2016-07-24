@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // gu = ISO 639-1 code for Gujarati
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.gu = {
 	language : '\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0 (Gujarati)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.gu = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

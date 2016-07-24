@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // ro = ISO 639-1 code for Romanian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.ro = {
 	language: 'Rom\u00e2n\u0103 (Romanian)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.ro = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Foloseste rotita mouse-ului pentru a vedea si celelalte caractere',
 };
+
+module.exports.jQuery = jQuery;

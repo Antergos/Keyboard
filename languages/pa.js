@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // pa = ISO 639-1 code for Punjabi
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.pa = {
 	language : '\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40 (Punjabi)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.pa = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

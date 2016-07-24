@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // es = ISO 639-1 code for Spanish
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.es = {
 	language: 'Espa\u00f1ol (Spanish)',
 	display : {
@@ -27,3 +30,5 @@ jQuery.keyboard.language.es = {
 	},
 	wheelMessage : 'Utilice la rueda del mouse para ver otras teclas'
 };
+
+module.exports.jQuery = jQuery;

@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // te = ISO 639-1 code for Telugu
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.te = {
 	language : '\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.te = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

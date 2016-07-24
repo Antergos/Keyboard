@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // ur = ISO 639-1 code for Urdu
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.ur = {
 	language : '\u0627\u0631\u062f\u0648 (Urdu)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.ur = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

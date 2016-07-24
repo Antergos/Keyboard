@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // tr = ISO 639-1 code for Turkish
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.tr = {
 	language: 'T\u00fcrk\u00e7e (Turkish)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.tr = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

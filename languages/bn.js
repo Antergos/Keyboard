@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // bn = ISO 639-1 code for Bengali
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.bn = {
 	language: '\u09ac\u09be\u0982\u09b2\u09be (Bengali)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.bn = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

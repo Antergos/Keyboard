@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // sq = ISO 639-1 code for Albanian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.sq = {
 	language : 'Shqip (Albanian)',
 	display : {
@@ -38,3 +41,5 @@ jQuery.keyboard.language.sq = {
 		'/' : { d:"\u0111", D:"\u0110", l:"\u0142", L:"\u0141" } // stroke đ Đ ł Ł
 	}
 };
+
+module.exports.jQuery = jQuery;

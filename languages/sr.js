@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // sr = ISO 639-1 code for Serbian
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.sr = {
 	language: '\u0441\u0440\u043f\u0441\u043a\u0438 (Serbian)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.sr = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

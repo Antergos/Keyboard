@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // ca = ISO 639-1 code for Catalan
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.ca = {
 	language: 'Catalan (Catalan)',
 	display : {
@@ -28,3 +31,5 @@ jQuery.keyboard.language.ca = {
 	// Message added to the key title while hovering, if the mousewheel plugin exists
 	wheelMessage : 'Use mousewheel to see other keys',
 };
+
+module.exports.jQuery = jQuery;

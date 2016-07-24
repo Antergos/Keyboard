@@ -2,6 +2,9 @@
 // please update this section to match this language and email me with corrections!
 // he = ISO 639-1 code for Hebrew
 // ***********************
+var jQuery = jQuery || {keyboard: {language: {}}};
+var module = module || {exports: {}};
+
 jQuery.keyboard.language.he = {
 	language: '\u05e2\u05d1\u05e8\u05d9\u05ea (Hebrew)',
 	display : {
@@ -30,3 +33,5 @@ jQuery.keyboard.language.he = {
 	// language direction
 	rtl : true
 };
+
+module.exports.jQuery = jQuery;
