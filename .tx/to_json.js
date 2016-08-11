@@ -29,7 +29,7 @@
 
 var fs = require( "fs" ),
 	path = require( 'path' ),
-	lang_dir = process.argv[2] + '/languages/',
+	lang_dir = process.argv[2] + '/languages',
 	translation_files = fs.readdirSync( lang_dir ),
 	json_dir = lang_dir + '/json/',
 	jQuery = {keyboard: {language: {}}};
@@ -58,10 +58,20 @@ for ( var file of translation_files ) {
 	trans.wheelMessage = _trans.wheelMessage;
 
 	for (var item in _trans.display) {
+		let excluded = ['.', 'nbsp;'],
+			ascii = /^[ -~]+$/;
+
 		if (_trans.display.hasOwnProperty(item)) {
 			trans.display[item] = {};
 			trans.display[item]['action_key'] = _trans.display[item].split(':')[0];
 			trans.display[item]['tooltip'] = _trans.display[item].split(':')[1];
+
+			for ( let str of excluded ) {
+				if ( trans.display[item]['action_key'].indexOf(str) > -1 || ! ascii.test(trans.display[item]['action_key']) ) {
+					delete trans.display[item]['action_key'];
+					break;
+				}
+			}
 		}
 	}
 
