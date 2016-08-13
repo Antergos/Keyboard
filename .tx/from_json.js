@@ -1,7 +1,7 @@
 /*
  * Copyright © 2015-2016 Antergos
  *
- * to_json.js
+ * from_json.js
  *
  * This file is part of jQuery Keyboard
  *
@@ -25,23 +25,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Run from includes/keyboard directory: node .tx/to_json.js ${PWD}
+// Run from includes/keyboard directory: node .tx/from_json.js ${PWD}
 
 let fs = require( "fs" ),
 	path = require( 'path' ),
 	lang_dir = process.argv[2] + '/languages',
-	translation_files = fs.readdirSync( lang_dir ),
 	json_dir = lang_dir + '/json/',
-	jQuery = {keyboard: {language: {}}};
+	translation_files = fs.readdirSync( json_dir ),
+	translations = {};
 
 
 function process_translations() {
 	for ( let file of translation_files ) {
 		let abs_path, lang, out, _, _trans, trans;
 
-		abs_path = lang_dir + file;
-		lang = file.replace( '.js', '' );
-		out = json_dir + lang + '.json';
+		abs_path = json_dir + file;
+		lang = file.replace( '.json', '' );
+		out = `${json_dir}${lang}.js`;
 
 		if ( 'json' === file || 'README.md' === file ) {
 			continue;
