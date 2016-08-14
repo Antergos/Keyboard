@@ -8,16 +8,16 @@ fr = {
 	display : {
 		'a'      : '\u2714:Valider (Shift+Enter)', // check mark - same action as accept
 		'accept' : 'Valider:Valider (Shift+Enter)',
-		'alt'    : 'AltGr:Charact\u00e8re alternatif',
-		'b'      : '\u2190:Suppr arri\u00e8re', // Left arrow (same as &larr;)
-		'bksp'   : '\u2190Suppr:Suppr arri\u00e8re',
+		'alt'    : 'AltGr:Charactère alternatif',
+		'b'      : '\u2190:Suppr arrière', // Left arrow (same as &larr;)
+		'bksp'   : 'Bksp:Suppr arrière',
 		'c'      : '\u2716:Annuler', // big X, close - same action as cancel
-		'cancel' : 'Annuler:Annuler (\u00c9chap)',
+		'cancel' : 'Annuler:Annuler (Échap)',
 		'clear'  : 'C:Effacer', // clear num pad
 		'combo'  : '\u00f6:Bacsuler les touches combo',
 		'dec'    : '.:Decimal', // decimal point for num pad (optional), change '.' to ',' for European format
-		'e'      : '\u21b5:Entr\u00e9e', // down, then left arrow - enter symbol
-		'enter'  : 'Entr\u00e9e:Entr\u00e9e',
+		'e'      : '\u21b5:Entrée', // down, then left arrow - enter symbol
+		'enter'  : 'Enter:Entrée',
 		'lock'   : '\u21ea Verr Mag:Verouillage majuscule', // caps lock
 		's'      : '\u21e7:Majuscule', // thick hollow up arrow
 		'shift'  : 'Maj:Majuscule',

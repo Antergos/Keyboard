@@ -9,11 +9,11 @@ sq = {
 		'a'      : '\u2714:Prano (Shift+Enter)', // check mark - same action as accept
 		'accept' : 'Prano:Prano (Shift+Enter)',
 		'alt'    : 'Alt:Alternativ',
-		'b'      : '\u2190:Hap\u00ebsir\u00ebn Mbrapa',    // Left arrow (same as &larr;)
-		'bksp'   : 'Bksp:Hap\u00ebsir\u00ebn Mbrapa',
+		'b'      : '\u2190:Hapësirën Mbrapa',    // Left arrow (same as &larr;)
+		'bksp'   : 'Bksp:Hapësirën Mbrapa',
 		'c'      : '\u2716:Anuloj (Arratisjes)', // big X, close - same action as cancel
 		'cancel' : 'Anuloj:Anuloj (Arratisjes)',
-		'clear'  : 'C:Qart\u00eb',             // clear num pad
+		'clear'  : 'C:Qartë',             // clear num pad
 		'combo'  : '\u00f6:Kombinimi',
 		'dec'    : '.:Decimal',           // decimal point for num pad (optional), change '.' to ',' for European format
 		'e'      : '\u21b5:Shkruani',        // down, then left arrow - enter symbol
@@ -24,7 +24,7 @@ sq = {
 		's'      : '\u21e7:Ndryshim',        // thick hollow up arrow
 		'shift'  : 'Ndryshim:Ndryshim',
 		'sign'   : '\u00b1:Ndryshimi Regjistrohu',  // +/- sign for num pad
-		'space'  : '&nbsp;:Hap\u00ebsir\u00eb',
+		'space'  : '&nbsp;:Hapësirë',
 		't'      : '\u21e5:Tab',          // right arrow to bar (used since this virtual keyboard works with one directional tabs)
 		'tab'    : '\u21e5 Tab:Tab'       // \u21b9 is the true tab symbol (left & right arrows)
 	},

@@ -6,11 +6,11 @@
 lv = {
 	language: 'Latvie\u0161u (Latvian)',
 	display : {
-		'a'      : '\u2714:Pie\u0146emt (Shift+Enter)', // check mark - same action as accept
-		'accept' : 'Pie\u0146emt:Pie\u0146emt (Shift+Enter)',
-		'alt'    : 'AltGr:Altern\u0113\u0161anas tausti\u0146\u0161',
-		'b'      : '\u2190:Atpaka\u013Catk\u0101pe',    // Left arrow (same as &larr;)
-		'bksp'   : 'Bksp:Atpaka\u013Catk\u0101pe',
+		'a'      : '\u2714:PieÅ†emt (Shift+Enter)', // check mark - same action as accept
+		'accept' : 'Accept:PieÅ†emt (Shift+Enter)',
+		'alt'    : 'AltGr:AlternÄ“Å¡anas taustiÅ†Å¡',
+		'b'      : '\u2190:AtpakaÄ¼atkÄpe',    // Left arrow (same as &larr;)
+		'bksp'   : 'Bksp:AtpakaÄ¼atkÄpe',
 		'c'      : '\u2716:Atcelt (Esc)', // big X, close - same action as cancel
 		'cancel' : 'Atcelt:Atcelt (Esc)',
 		'clear'  : 'C:Clear',             // clear num pad
@@ -31,11 +31,11 @@ lv = {
 	// New combos using specific accents
 	combos : {
 		// duplicated from regular combos, used specific accents here instead
-		// acute & cedilla c C é É n N ó Ó s S z Z
+		// acute & cedilla c C ï¿½ ï¿½ n N ï¿½ ï¿½ s S z Z
 		"'" : { c:"\u0107", C:"\u0106", e:"\u00e9", E:"\u00c9", n:"\u0144", N:"\u0143", o:"\u00f3", O:"\u00d3", s:"\u015b", S:"\u015a", z:"\u017a", Z:"\u0179" },
-		// diaeresis: ä Ä ö Ö ü Ü
+		// diaeresis: ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½
 		'\u00a8' : { a:"\u00e4", A:"\u00c4", o:"\u00f6", O:"\u00d6", u:"\u00fc", U:"\u00dc" },
-		// degree sign å Å e E g z Z
+		// degree sign ï¿½ ï¿½ e E g z Z
 		'\u00b0' : { a:"\u00e5", A:"\u00c5", e:"\u0117", E:"\u0116", g:"\u0121", z:"\u017c", Z:"\u017b" },
 	},
 	comboRegex : /([`\'~\^\"ao\u00a8\u00b0])([a-z])/mig

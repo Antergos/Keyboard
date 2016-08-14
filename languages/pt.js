@@ -10,7 +10,7 @@ pt = {
 		'accept' : 'Aceitar:Concluir (Shift+Enter)',         // Accept button text
 		'alt'    : 'AltGr:Carateres Adicionais/CTRL+ALT',    // Alt button text (AltGr is for international key sets)
 		'b'      : '\u2190:Retroceder',                      // ALTERNATE backspace button - unicode for left arrow. Same as ← ( &larr; ) - Left arrow
-		'bksp'   : '\u2190 Bksp:Retroceder',                 // Backspace button text
+		'bksp'   : 'Bksp:Retroceder',                 // Backspace button text
 		'c'      : '\u2716:Cancelar/Escape (Esc)',           // ALTERNATE cancel button - unicode for big X
 		'cancel' : 'Cancel:Cancelar/Escape(Esc)',            // Cancel button text
 		'clear'  : 'C:Limpar',                               // Clear window content (used in num pad)
