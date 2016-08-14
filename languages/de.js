@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // de = ISO 639-1 code for German
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.de = {
+de = {
 	language: 'Deutsch (German)',
 	display : {
 		'a'      : '\u2714:\u00dcbernehmen (Umschalt+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.de = {
 	wheelMessage : 'Mausrad benutzen, um weitere Tasten zu sehen',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/de = templates/de;

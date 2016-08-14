@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ca = ISO 639-1 code for Catalan
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ca = {
+ca = {
 	language: 'Catalan (Catalan)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.ca = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/ca = templates/ca;

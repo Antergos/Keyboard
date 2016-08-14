@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // th = ISO 639-1 code for Thai
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.th = {
+th = {
 	language: '\u0e44\u0e17\u0e22 (Thai)',
 	display : {
 		'a'      : '\u2714:Validate (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.th = {
 	wheelMessage : 'You can use the mouse wheel to see additional keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/th = templates/th;

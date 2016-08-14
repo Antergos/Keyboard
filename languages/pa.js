@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // pa = ISO 639-1 code for Punjabi
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.pa = {
+pa = {
 	language : '\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40 (Punjabi)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.pa = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/pa = templates/pa;

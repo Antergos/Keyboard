@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // as = ISO 639-1 code for Assamese
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.as = {
+as = {
 	language : '\u0985\u09b8\u09ae\u09c0\u09df\u09be (Assamese)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.as = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/as = templates/as;

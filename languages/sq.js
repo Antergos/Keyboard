@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // sq = ISO 639-1 code for Albanian
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.sq = {
+sq = {
 	language : 'Shqip (Albanian)',
 	display : {
 		'a'      : '\u2714:Prano (Shift+Enter)', // check mark - same action as accept
@@ -42,4 +40,4 @@ jQuery.keyboard.language.sq = {
 	}
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/sq = templates/sq;

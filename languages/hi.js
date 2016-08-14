@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // hi = ISO 639-1 code for Hindi
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.hi = {
+hi = {
 	language: '\u0939\u093f\u0902\u0926\u0940 (Hindi)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.hi = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/hi = templates/hi;

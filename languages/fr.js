@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // fr = ISO 639-1 code for French
 // ***********************
-/*var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};*/
 
-jQuery.keyboard.language.fr = {
+fr = {
 	language: 'Fran\u00e7ais (French)',
 	display : {
 		'a'      : '\u2714:Valider (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.fr = {
 	wheelMessage : 'Utiliser la molette de la souris pour voir les autres lettres',
 };
 
-// module.exports.jQuery = jQuery;
+// module.exports.templates/fr = templates/fr;

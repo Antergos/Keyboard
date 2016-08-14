@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // kn = ISO 639-1 code for Kannada
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.kn = {
+kn = {
 	Language : '\u0c95\u0ca8\u0ccd\u0ca8\u0ca1 (Kannada)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.kn = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/kn = templates/kn;

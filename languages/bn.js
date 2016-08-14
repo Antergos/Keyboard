@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // bn = ISO 639-1 code for Bengali
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.bn = {
+bn = {
 	language: '\u09ac\u09be\u0982\u09b2\u09be (Bengali)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.bn = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/bn = templates/bn;

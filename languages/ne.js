@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ne = ISO 639-1 code for Nepali
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ne = {
+ne = {
 	language : '\u0928\u0947\u092a\u093e\u0932\u0940 (Nepali)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.ne = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/ne = templates/ne;

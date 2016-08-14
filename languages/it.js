@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // "all" is used here for example purposes, by convention it should be the ISO 639-1 code for the specified language
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.it = {
+it = {
 	language: 'Italiano (Italian)', // e.g. 'Русский (Russian)'
 	display : {
 		'a'      : '\u2714:Accetta (Shift+Enter)', // check mark - same action as accept
@@ -60,4 +58,4 @@ jQuery.keyboard.language.it = {
 	*/
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/it = templates/it;

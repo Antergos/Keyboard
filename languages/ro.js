@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ro = ISO 639-1 code for Romanian
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ro = {
+ro = {
 	language: 'Rom\u00e2n\u0103 (Romanian)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.ro = {
 	wheelMessage : 'Foloseste rotita mouse-ului pentru a vedea si celelalte caractere',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/ro = templates/ro;

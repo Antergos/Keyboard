@@ -29,54 +29,56 @@
 
 let fs = require( "fs" ),
 	path = require( 'path' ),
-	lang_dir = process.argv[2] + '/languages',
-	json_dir = lang_dir + '/json/',
-	translation_files = fs.readdirSync( json_dir ),
+	parse = require('loose-json'),
+	lang_dir = `${process.argv[2]}/languages`,
+	json_dir = `${lang_dir}/json`,
+	translation_files = fs.readdirSync( lang_dir ),
 	translations = {};
 
 
 function process_translations() {
 	for ( let file of translation_files ) {
-		let abs_path, lang, out, _, _trans, trans;
+		let trans_file, json_file, lang, out, excluded, trans_lines, new_trans_lines, json_data, key_re, val_re;
+		excluded = ['README.md', 'json'];
 
-		abs_path = json_dir + file;
-		lang = file.replace( '.json', '' );
-		out = `${json_dir}${lang}.js`;
-
-		if ( 'json' === file || 'README.md' === file ) {
+		if ( excluded.findIndex( e => file === e ) > -1 ) {
 			continue;
-		} else if ( '_language_template.js' === file ) {
+		}
+
+		trans_file = `${lang_dir}/${file}`;
+		lang = file.replace( '.js', '' );
+		json_file = `${json_dir}/${lang}.json`;
+
+		if ( '_language_template.js' === file ) {
 			lang = 'all';
-			out = json_dir + '_' + lang + '.json';
+			json_file = `${json_dir}/_${lang}.json`;
 		}
 
-		_ = require('../languages/' + file);
+		json_data = fs.readFileSync(json_file).toString();
+		trans_lines = fs.readFileSync(trans_file).toString().split('\n');
+		new_trans_lines = [];
+		json_data = parse(json_data);
+		key_re = /^\t\t'(\w+)' +:/;
+		val_re = /^(\t\t'\w+' +: +')([\w\\\d. &;]+)(:)([\w\d\\ (+)]+)(')/;
 
-		_trans = _.jQuery.keyboard.language[lang];
-		trans = {language: '', display: {}, wheelMessage: ''};
+		for ( let line of trans_lines ) {
+			let key_matches = key_re.exec(line),
+				val_matches = val_re.exec(line),
+				key, val_action_key, val_tooltip, replace_with;
 
-		trans.language = _trans.language;
-		trans.wheelMessage = _trans.wheelMessage;
-
-		for (let item in _trans.display) {
-			let excluded = ['.', 'nbsp;'],
-				ascii = /^[ -~]+$/;
-
-			if (_trans.display.hasOwnProperty(item)) {
-				trans.display[item] = {};
-				trans.display[item]['action_key'] = _trans.display[item].split(':')[0];
-				trans.display[item]['tooltip'] = _trans.display[item].split(':')[1];
-
-				for ( let str of excluded ) {
-					if ( trans.display[item]['action_key'].indexOf(str) > -1 || ! ascii.test(trans.display[item]['action_key']) ) {
-						delete trans.display[item]['action_key'];
-						break;
-					}
-				}
+			if ( null === key_matches || null === val_matches ) {
+				continue;
 			}
+
+			key = key_matches[1];
+			val_action_key = json_data.display[key].hasOwnProperty('action_key') ? json_data.display[key].action_key : val_matches[2];
+			val_tooltip = json_data.display[key].tooltip;
+			replace_with = `$1${val_action_key}$3${val_tooltip}$5`;
+
+			new_trans_lines.push( line.replace(val_re, replace_with) );
 		}
 
-		write_json(trans, out);
+		write_lines(new_trans_lines, trans_file);
 
 	}
 
@@ -84,17 +86,8 @@ function process_translations() {
 }
 
 
-function JSON_stringify( s, emit_unicode ) {
-	var json = JSON.stringify(s);
-	return emit_unicode ? json : json.replace(/[\u007f-\uffff]/g,
-		function( c ) {
-			return '\\u' + ('0000' + c.charCodeAt(0).toString(16)).slice(-4);
-		}
-	);
-}
-
-function write_json(obj, out) {
-	fs.writeFile(out, JSON_stringify(obj, false), function( error ) {
+function write_lines(lines, out) {
+	fs.writeFile(out, lines.join('\n'), function( error ) {
 		if ( error ) {
 			console.error("write error:  " + error.message);
 		} else {

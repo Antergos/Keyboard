@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // lv = ISO 639-1 code for Latvian
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.lv = {
+lv = {
 	language: 'Latvie\u0161u (Latvian)',
 	display : {
 		'a'      : '\u2714:Pie\u0146emt (Shift+Enter)', // check mark - same action as accept
@@ -43,4 +41,4 @@ jQuery.keyboard.language.lv = {
 	comboRegex : /([`\'~\^\"ao\u00a8\u00b0])([a-z])/mig
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/lv = templates/lv;

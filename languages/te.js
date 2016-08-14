@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // te = ISO 639-1 code for Telugu
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.te = {
+te = {
 	language : '\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.te = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/te = templates/te;

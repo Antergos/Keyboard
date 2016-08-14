@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ja = ISO 639-1 code for Japanese
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ja = {
+ja = {
 	language: '\u65e5\u672c\u8a9e (Japanese)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -40,4 +38,4 @@ jQuery.keyboard.language.ja = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/ja = templates/ja;

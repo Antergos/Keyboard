@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ur = ISO 639-1 code for Urdu
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ur = {
+ur = {
 	language : '\u0627\u0631\u062f\u0648 (Urdu)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.ur = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/ur = templates/ur;

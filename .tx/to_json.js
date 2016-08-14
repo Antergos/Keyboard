@@ -29,10 +29,9 @@
 
 let fs = require( "fs" ),
 	path = require( 'path' ),
-	lang_dir = process.argv[2] + '/languages',
+	lang_dir = process.argv[2] + '/languages/templates',
 	translation_files = fs.readdirSync( lang_dir ),
-	json_dir = lang_dir + '/json/',
-	jQuery = {keyboard: {language: {}}};
+	json_dir = process.argv[2] + '/json/';
 
 
 function process_translations() {
@@ -43,16 +42,14 @@ function process_translations() {
 		lang = file.replace( '.js', '' );
 		out = json_dir + lang + '.json';
 
-		if ( 'json' === file || 'README.md' === file ) {
-			continue;
-		} else if ( '_language_template.js' === file ) {
+		if ( '_language_template.js' === file ) {
 			lang = 'all';
 			out = json_dir + '_' + lang + '.json';
 		}
 
 		_ = require('../languages/' + file);
 
-		_trans = _.jQuery.keyboard.language[lang];
+		_trans = _[lang];
 		trans = {language: '', display: {}, wheelMessage: ''};
 
 		trans.language = _trans.language;

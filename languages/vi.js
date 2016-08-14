@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // vi = ISO 639-1 code for Vietnamese
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.vi = {
+vi = {
 	language: 'Ti\u1ebfng Vi\u1ec7t (Vietnamese)',
 	display : {
 		'a'      : '\u2714:Validate (Shift+Enter)', // check mark - same action as accept
@@ -68,4 +66,4 @@ jQuery.keyboard.language.vi = {
 	}
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/vi = templates/vi;

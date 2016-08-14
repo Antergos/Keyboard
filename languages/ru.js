@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ru = ISO 639-1 code for Russian
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ru = {
+ru = {
 	language: '\u0420\u0443\u0441\u0441\u043a\u0438\u0439 (Russian)',
 	display : {
 		'a'      : '\u2714:Сохранить (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.ru = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/ru = templates/ru;

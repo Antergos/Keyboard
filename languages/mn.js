@@ -1,10 +1,8 @@
 // Keyboard Language
 // mn = ISO 639-1 code for Mongolian
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.mn = {
+mn = {
 	language: '\u041c\u043e\u043d\u0433\u043e\u043b (Mongolian)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -31,4 +29,4 @@ jQuery.keyboard.language.mn = {
 	wheelMessage : 'Use mousewheel to see other keys'
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/mn = templates/mn;

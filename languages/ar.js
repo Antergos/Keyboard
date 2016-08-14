@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ar = ISO 639-1 code for Arabic
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ar = {
+ar = {
 	language: '\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (Arabic)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -34,4 +32,4 @@ jQuery.keyboard.language.ar = {
 	rtl : true
 };
 
-module.exports.jQuery = jQuery;
+module.exports.ar = ar;

@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // mr = ISO 639-1 code for Marathi
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.mr = {
+mr = {
 	language : '\u092e\u0930\u093e\u0920\u0940 (Marathi)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.mr = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/mr = templates/mr;

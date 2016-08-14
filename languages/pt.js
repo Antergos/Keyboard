@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // pt = ISO 639-1 code for Portuguese
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.pt = {
+pt = {
 	language: 'Portugu\u00eas (Portuguese)',
 	display : {
 		'a'      : '\u2714:Aceitar (Shift+Enter)',           // ALTERNATE accept button - unicode for check mark symbol
@@ -41,4 +39,4 @@ jQuery.keyboard.language.pt = {
 
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/pt = templates/pt;

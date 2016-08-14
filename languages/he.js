@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // he = ISO 639-1 code for Hebrew
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.he = {
+he = {
 	language: '\u05e2\u05d1\u05e8\u05d9\u05ea (Hebrew)',
 	display : {
 		'a'      : '\u2714:אישור (Shift+Enter)', // check mark - same action as accept
@@ -34,4 +32,4 @@ jQuery.keyboard.language.he = {
 	rtl : true
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/he = templates/he;

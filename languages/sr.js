@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // sr = ISO 639-1 code for Serbian
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.sr = {
+sr = {
 	language: '\u0441\u0440\u043f\u0441\u043a\u0438 (Serbian)',
 	display : {
 		'a'      : '\u2714:Accept (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.sr = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/sr = templates/sr;

@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // ta = ISO 639-1 code for Tamil
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.ta = {
+ta = {
 	language: '\u0ba4\u0bae\u0bbf\u0bb4\u0bcd (Tamil)',
 	display : {
 		'a'      : '\u2714:Validate (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.ta = {
 	wheelMessage : 'You can use the mouse wheel to see additional keys',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/ta = templates/ta;

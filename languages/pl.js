@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // pl = ISO 639-1 code for Polish
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.pl = {
+pl = {
 	language: 'Polski (Polish)',
 	display : {
 		'a'      : '\u2714:Akceptuj (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.pl = {
 	wheelMessage : 'Użyj rolki aby zobaczyć pozozstałe klawisze',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/pl = templates/pl;

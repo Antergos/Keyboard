@@ -2,10 +2,8 @@
 // please update this section to match this language and email me with corrections!
 // hu = ISO 639-1 code for Hungarian
 // ***********************
-var jQuery = jQuery || {keyboard: {language: {}}};
-var module = module || {exports: {}};
 
-jQuery.keyboard.language.hu = {
+hu = {
 	language: 'Magyar (Hungarian)',
 	display : {
 		'a'      : '\u2714:Rendben (Shift+Enter)', // check mark - same action as accept
@@ -32,4 +30,4 @@ jQuery.keyboard.language.hu = {
 	wheelMessage : 'Haszn\u00e1ld az eg\u00e9r g\u00f6rget\u0151t a t\u00f6bbi billenty\u0171 \u00e1tv\u00e1lt\u00e1shoz',
 };
 
-module.exports.jQuery = jQuery;
+module.exports.templates/hu = templates/hu;
