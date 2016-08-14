@@ -74,17 +74,24 @@ function process_translations() {
 				key, val_action_key, val_tooltip, replace_with;
 
 			if ( null === key_matches || null === val_matches ) {
+				new_trans_lines.push(line);
 				continue;
 			}
 
 			key = key_matches[1];
-			console.log([key]);
+
+			if ( ! json_data.display.hasOwnProperty( key ) ) {
+				new_trans_lines.push(line);
+				continue;
+			}
+
 			val_action_key = json_data.display[key].hasOwnProperty('action_key') ? json_data.display[key].action_key : val_matches[2];
 			val_tooltip = json_data.display[key].tooltip;
 			replace_with = `$1${val_action_key}$3${val_tooltip}$5`;
 
 			new_trans_lines.push( line.replace(val_re, replace_with) );
 		}
+
 
 		write_lines(new_trans_lines, trans_file);
 
@@ -94,14 +101,8 @@ function process_translations() {
 }
 
 
-function write_lines(lines, out) {
-	fs.writeFile(out, lines.join('\n'), function( error ) {
-		if ( error ) {
-			console.error("write error:  " + error.message);
-		} else {
-			console.log("Successful Write to " + out);
-		}
-	});
+function write_lines(_lines, out) {
+	fs.writeFileSync( out, _lines.join('\n') );
 }
 
 process_translations();
