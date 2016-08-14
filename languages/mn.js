@@ -29,4 +29,4 @@ mn = {
 	wheelMessage : 'Use mousewheel to see other keys'
 };
 
-module.exports.templates/mn = templates/mn;
+modules.exports.mn = mn;

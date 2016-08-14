@@ -32,4 +32,4 @@ he = {
 	rtl : true
 };
 
-module.exports.templates/he = templates/he;
+modules.exports.he = he;

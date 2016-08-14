@@ -29,4 +29,4 @@ zh = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.templates/zh = templates/zh;
+modules.exports.zh = zh;

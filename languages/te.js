@@ -30,4 +30,4 @@ te = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.templates/te = templates/te;
+modules.exports.te = te;

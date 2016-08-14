@@ -66,4 +66,4 @@ vi = {
 	}
 };
 
-module.exports.templates/vi = templates/vi;
+modules.exports.vi = vi;

@@ -30,4 +30,4 @@ pa = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.templates/pa = templates/pa;
+modules.exports.pa = pa;

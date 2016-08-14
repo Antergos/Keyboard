@@ -58,4 +58,4 @@ all = {
 	*/
 };
 
-module.exports.all = all;
+modules.exports._language_template = _language_template;

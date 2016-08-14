@@ -54,4 +54,4 @@ fa = {
 	*/
 };
 
-module.exports.templates/fa = templates/fa;
+modules.exports.fa = fa;

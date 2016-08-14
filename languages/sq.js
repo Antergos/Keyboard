@@ -40,4 +40,4 @@ sq = {
 	}
 };
 
-module.exports.templates/sq = templates/sq;
+modules.exports.sq = sq;

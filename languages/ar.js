@@ -32,4 +32,4 @@ ar = {
 	rtl : true
 };
 
-module.exports.ar = ar;
+modules.exports.ar = ar;

@@ -30,4 +30,4 @@ kn = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.templates/kn = templates/kn;
+modules.exports.kn = kn;

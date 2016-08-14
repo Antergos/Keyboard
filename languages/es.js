@@ -29,4 +29,4 @@ es = {
 	wheelMessage : 'Utilice la rueda del mouse para ver otras teclas'
 };
 
-module.exports.templates/es = templates/es;
+modules.exports.es = es;

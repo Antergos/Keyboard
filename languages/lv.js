@@ -41,4 +41,4 @@ lv = {
 	comboRegex : /([`\'~\^\"ao\u00a8\u00b0])([a-z])/mig
 };
 
-module.exports.templates/lv = templates/lv;
+modules.exports.lv = lv;

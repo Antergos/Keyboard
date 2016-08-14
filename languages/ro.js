@@ -30,4 +30,4 @@ ro = {
 	wheelMessage : 'Foloseste rotita mouse-ului pentru a vedea si celelalte caractere',
 };
 
-module.exports.templates/ro = templates/ro;
+modules.exports.ro = ro;

@@ -58,4 +58,4 @@ it = {
 	*/
 };
 
-module.exports.templates/it = templates/it;
+modules.exports.it = it;

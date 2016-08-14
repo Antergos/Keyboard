@@ -30,4 +30,4 @@ hi = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-module.exports.templates/hi = templates/hi;
+modules.exports.hi = hi;
