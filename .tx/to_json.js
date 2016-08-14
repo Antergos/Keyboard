@@ -29,14 +29,19 @@
 
 let fs = require( "fs" ),
 	path = require( 'path' ),
-	lang_dir = process.argv[2] + '/languages/templates',
+	lang_dir = process.argv[2] + '/languages',
 	translation_files = fs.readdirSync( lang_dir ),
-	json_dir = process.argv[2] + '/json/';
+	json_dir = lang_dir + '/json/';
 
 
 function process_translations() {
 	for ( let file of translation_files ) {
-		let abs_path, lang, out, _, _trans, trans;
+		let abs_path, lang, out, _, _trans, trans, exclude;
+		exclude = ['README.md', 'json', '_combined_translations.js'];
+
+		if ( exclude.findIndex( e => file === e ) > -1 ) {
+			continue;
+		}
 
 		abs_path = lang_dir + file;
 		lang = file.replace( '.js', '' );
@@ -50,26 +55,20 @@ function process_translations() {
 		_ = require('../languages/' + file);
 
 		_trans = _[lang];
-		trans = {language: '', display: {}, wheelMessage: ''};
+		trans = {};
 
-		trans.language = _trans.language;
-		trans.wheelMessage = _trans.wheelMessage;
+		trans[_trans.language] = ('all' !== lang) ? '' : _trans.language;
+		trans[_trans.wheelMessage] = ('all' !== lang) ? '' : _trans.wheelMessage;
 
 		for (let item in _trans.display) {
-			let excluded = ['.', 'nbsp;'],
+			let excluded = ['.', 'nbsp;', 'a', 'b', 'c', 'combo', 'dec', 'e', 's', 'sign', 't'],
 				ascii = /^[ -~]+$/;
 
 			if (_trans.display.hasOwnProperty(item)) {
-				trans.display[item] = {};
-				trans.display[item]['action_key'] = _trans.display[item].split(':')[0];
-				trans.display[item]['tooltip'] = _trans.display[item].split(':')[1];
-
-				for ( let str of excluded ) {
-					if ( trans.display[item]['action_key'].indexOf(str) > -1 || ! ascii.test(trans.display[item]['action_key']) ) {
-						delete trans.display[item]['action_key'];
-						break;
-					}
+				if ( excluded.findIndex( e => e === item ) === -1 ) {
+					trans[_trans.display[item].split(':')[0]] = ('all' !== lang) ? '' : _trans.display[item].split(':')[0];
 				}
+				trans[_trans.display[item].split(':')[1]] = ('all' !== lang) ? '' : _trans.display[item].split(':')[1];
 			}
 		}
 

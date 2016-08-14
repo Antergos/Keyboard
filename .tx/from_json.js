@@ -85,8 +85,8 @@ function process_translations() {
 				continue;
 			}
 
-			val_action_key = json_data.display[key].hasOwnProperty('action_key') ? json_data.display[key].action_key : val_matches[2];
-			val_tooltip = json_data.display[key].tooltip;
+			val_action_key = json_data.hasOwnProperty(key) ? json_data[key] : val_matches[2];
+			val_tooltip = json_data.hasOwnProperty(val_matches[4]) ? json_data[val_matches[4]] : val_matches[4];
 			replace_with = `$1${val_action_key}$3${val_tooltip}$5`;
 
 			new_trans_lines.push( line.replace(val_re, replace_with) );
