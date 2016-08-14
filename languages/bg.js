@@ -30,4 +30,4 @@ bg = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-modules.exports.bg = bg;
+module.exports.bg = bg;

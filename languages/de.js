@@ -30,4 +30,4 @@ de = {
 	wheelMessage : 'Mausrad benutzen, um weitere Tasten zu sehen',
 };
 
-modules.exports.de = de;
+module.exports.de = de;

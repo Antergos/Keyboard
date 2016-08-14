@@ -39,4 +39,4 @@ pt = {
 
 };
 
-modules.exports.pt = pt;
+module.exports.pt = pt;

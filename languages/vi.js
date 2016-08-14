@@ -66,4 +66,4 @@ vi = {
 	}
 };
 
-modules.exports.vi = vi;
+module.exports.vi = vi;

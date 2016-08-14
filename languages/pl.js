@@ -30,4 +30,4 @@ pl = {
 	wheelMessage : 'Użyj rolki aby zobaczyć pozozstałe klawisze',
 };
 
-modules.exports.pl = pl;
+module.exports.pl = pl;

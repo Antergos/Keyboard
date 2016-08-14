@@ -39,7 +39,7 @@ let fs = require( "fs" ),
 function process_translations() {
 	for ( let file of translation_files ) {
 		let trans_file, json_file, lang, out, excluded, trans_lines, new_trans_lines, json_data, key_re, val_re, end;
-		excluded = ['README.md', 'json'];
+		excluded = ['README.md', 'json', '_combined_translations.js'];
 
 		if ( excluded.findIndex( e => file === e ) > -1 ) {
 			continue;
@@ -94,12 +94,25 @@ function process_translations() {
 
 
 		write_lines(new_trans_lines, trans_file);
+		add_to_combined_translations( lang, trans_file );
 
 	}
+
+	create_combine_translations_file();
 
 	console.log( 'Done!' );
 }
 
+function add_to_combined_translations( lang, trans_file ) {
+	let parsed = require(trans_file);
+	translations[lang] = parsed[lang];
+}
+
+function create_combine_translations_file() {
+	let combined_file = `${lang_dir}/_combined_translations.js`,
+		_translations = `window.kbd_widget_translations = ${JSON.stringify( translations )};`;
+	fs.writeFileSync( combined_file, _translations );
+}
 
 function write_lines(_lines, out) {
 	fs.writeFileSync( out, _lines.join('\n') );

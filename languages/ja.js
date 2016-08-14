@@ -38,4 +38,4 @@ ja = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-modules.exports.ja = ja;
+module.exports.ja = ja;

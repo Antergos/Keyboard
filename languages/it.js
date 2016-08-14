@@ -58,4 +58,4 @@ it = {
 	*/
 };
 
-modules.exports.it = it;
+module.exports.it = it;

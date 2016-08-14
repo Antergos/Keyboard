@@ -30,4 +30,4 @@ fr = {
 	wheelMessage : 'Utiliser la molette de la souris pour voir les autres lettres',
 };
 
-modules.exports.fr = fr;
+module.exports.fr = fr;

@@ -30,4 +30,4 @@ sr = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-modules.exports.sr = sr;
+module.exports.sr = sr;

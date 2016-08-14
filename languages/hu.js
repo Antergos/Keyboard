@@ -30,4 +30,4 @@ hu = {
 	wheelMessage : 'Haszn\u00e1ld az eg\u00e9r g\u00f6rget\u0151t a t\u00f6bbi billenty\u0171 \u00e1tv\u00e1lt\u00e1shoz',
 };
 
-modules.exports.hu = hu;
+module.exports.hu = hu;

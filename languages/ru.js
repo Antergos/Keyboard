@@ -30,4 +30,4 @@ ru = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-modules.exports.ru = ru;
+module.exports.ru = ru;

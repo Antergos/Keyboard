@@ -29,4 +29,4 @@ zh = {
 	wheelMessage : 'Use mousewheel to see other keys',
 };
 
-modules.exports.zh = zh;
+module.exports.zh = zh;

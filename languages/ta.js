@@ -30,4 +30,4 @@ ta = {
 	wheelMessage : 'You can use the mouse wheel to see additional keys',
 };
 
-modules.exports.ta = ta;
+module.exports.ta = ta;

@@ -32,4 +32,4 @@ he = {
 	rtl : true
 };
 
-modules.exports.he = he;
+module.exports.he = he;

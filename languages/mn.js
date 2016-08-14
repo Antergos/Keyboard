@@ -29,4 +29,4 @@ mn = {
 	wheelMessage : 'Use mousewheel to see other keys'
 };
 
-modules.exports.mn = mn;
+module.exports.mn = mn;

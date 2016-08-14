@@ -54,4 +54,4 @@ fa = {
 	*/
 };
 
-modules.exports.fa = fa;
+module.exports.fa = fa;
