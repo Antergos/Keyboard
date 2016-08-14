@@ -38,7 +38,7 @@ let fs = require( "fs" ),
 
 function process_translations() {
 	for ( let file of translation_files ) {
-		let trans_file, json_file, lang, out, excluded, trans_lines, new_trans_lines, json_data, key_re, val_re;
+		let trans_file, json_file, lang, out, excluded, trans_lines, new_trans_lines, json_data, key_re, val_re, end;
 		excluded = ['README.md', 'json'];
 
 		if ( excluded.findIndex( e => file === e ) > -1 ) {
@@ -60,8 +60,15 @@ function process_translations() {
 		json_data = parse(json_data);
 		key_re = /^\t\t'(\w+)' +:/;
 		val_re = /^(\t\t'\w+' +: +')([\w\\\d. &;]+)(:)([\w\d\\ (+)]+)(')/;
+		end = false;
 
 		for ( let line of trans_lines ) {
+			if ( true === end || line.indexOf('combos :') > -1 ) {
+				end = true;
+				new_trans_lines.push(line);
+				continue;
+			}
+
 			let key_matches = key_re.exec(line),
 				val_matches = val_re.exec(line),
 				key, val_action_key, val_tooltip, replace_with;
@@ -71,6 +78,7 @@ function process_translations() {
 			}
 
 			key = key_matches[1];
+			console.log([key]);
 			val_action_key = json_data.display[key].hasOwnProperty('action_key') ? json_data.display[key].action_key : val_matches[2];
 			val_tooltip = json_data.display[key].tooltip;
 			replace_with = `$1${val_action_key}$3${val_tooltip}$5`;
