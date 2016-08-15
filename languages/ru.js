@@ -14,7 +14,7 @@ ru = {
 		'c'      : '\u2716:Отменить (Esc)', // big X, close - same action as cancel
 		'cancel' : 'Отменить:Отменить (Esc)',
 		'clear'  : 'C:Очистить',             // clear num pad
-		'combo'  : '\u00f6:Toggle Combo Keys',
+		'combo'  : '\u00f6:Переключить клавиши-модификаторы',
 		'dec'    : ',:Decimal',           // decimal point for num pad (optional), change '.' to ',' for European format
 		'e'      : '\u21b5:Ввод',        // down, then left arrow - enter symbol
 		'enter'  : 'Ввод:Перевод строки',

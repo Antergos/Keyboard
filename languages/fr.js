@@ -15,7 +15,7 @@ fr = {
 		'cancel' : 'Annuler:Annuler (Échap)',
 		'clear'  : 'C:Effacer', // clear num pad
 		'combo'  : '\u00f6:Bacsuler les touches combo',
-		'dec'    : '.:Decimal', // decimal point for num pad (optional), change '.' to ',' for European format
+		'dec'    : '.:Décimal', // decimal point for num pad (optional), change '.' to ',' for European format
 		'e'      : '\u21b5:Entrée', // down, then left arrow - enter symbol
 		'enter'  : 'Enter:Entrée',
 		'lock'   : '\u21ea Verr Mag:Verouillage majuscule', // caps lock

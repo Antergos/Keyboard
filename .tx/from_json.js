@@ -57,7 +57,7 @@ function process_translations() {
 		json_data = fs.readFileSync(json_file).toString();
 		trans_lines = fs.readFileSync(trans_file).toString().split('\n');
 		new_trans_lines = [];
-		json_data = parse(json_data);
+		json_data = JSON.parse(json_data);
 		key_re = /^\t\t'(\w+)' +:/;
 		val_re = /^(\t\t'\w+' +: +')([\w\\\d. &;]+)(:)([\w\d\\ (+)]+)(')/;
 		end = false;
@@ -78,16 +78,16 @@ function process_translations() {
 				continue;
 			}
 
-			key = key_matches[1];
+			key = val_matches[2];
 
-			if ( ! json_data.display.hasOwnProperty( key ) ) {
-				new_trans_lines.push(line);
-				continue;
-			}
 
-			val_action_key = json_data.hasOwnProperty(key) ? json_data[key] : val_matches[2];
-			val_tooltip = json_data.hasOwnProperty(val_matches[4]) ? json_data[val_matches[4]] : val_matches[4];
+
+
+
+			val_action_key = json_data[key] ? json_data[key] : key;
+			val_tooltip = json_data[val_matches[4]] ? json_data[val_matches[4]] : val_matches[4];
 			replace_with = `$1${val_action_key}$3${val_tooltip}$5`;
+			//console.log([val_action_key, val_tooltip]);
 
 			new_trans_lines.push( line.replace(val_re, replace_with) );
 		}

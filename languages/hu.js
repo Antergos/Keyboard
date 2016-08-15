@@ -10,9 +10,9 @@ hu = {
 		'accept' : 'Rendben:Rendben (Shift+Enter)',
 		'alt'    : 'AltGr:Alternate Graphemes',
 		'b'      : '\u2190:Backspace',    // Left arrow (same as &larr;)
-		'bksp'   : 'Bksp:Backspace',
+		'bksp'   : 'Töröl:Backspace',
 		'c'      : '\u2716:Cancel (Esc)', // big X, close - same action as cancel
-		'cancel' : 'Cancel:Cancel (Esc)',
+		'cancel' : 'Mégsem:Cancel (Esc)',
 		'clear'  : 'C:Clear',             // clear num pad
 		'combo'  : '\u00f6:Toggle Combo Keys',
 		'dec'    : '.:Decimal',           // decimal point for num pad (optional), change '.' to ',' for European format
